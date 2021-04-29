@@ -53,9 +53,12 @@ function getRepoOwner() {
 }
 
 function pickAssignees() {
-  const numberOfAssignees = core.getInput(NUMBER_OF_ASSIGNEES_KEY, {
-    required: true,
-  })
+  const numberOfAssignees = parseInt(
+    core.getInput(NUMBER_OF_ASSIGNEES_KEY, {
+      required: true,
+    }),
+    10
+  )
 
   const assigneePool = core
     .getInput(ASSIGNEE_POOL_KEY, { required: true })

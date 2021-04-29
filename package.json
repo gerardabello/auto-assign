@@ -2,7 +2,7 @@
   "name": "auto-assign",
   "author": "gerardabello",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatically assign PR assignees from a list",
   "main": "src/index.js",
   "scripts": {
