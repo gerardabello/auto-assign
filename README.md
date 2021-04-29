@@ -1,4 +1,4 @@
-# Auto assign for pull requests
+# Auto assign github action
 
 Randomly assigns a number of assignees to every PR from a pool.
 
