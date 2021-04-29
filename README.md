@@ -1,5 +1,7 @@
 # Auto assign for pull requests
 
+Randomly assigns a number of assignees to every PR from a pool.
+
 ## Example worflow
 
 ```yaml
