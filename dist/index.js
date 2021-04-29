@@ -6143,9 +6143,12 @@ function getRepoOwner() {
 }
 
 function pickAssignees() {
-  const numberOfAssignees = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput(NUMBER_OF_ASSIGNEES_KEY, {
-    required: true,
-  })
+  const numberOfAssignees = parseInt(
+    _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput(NUMBER_OF_ASSIGNEES_KEY, {
+      required: true,
+    }),
+    10
+  )
 
   const assigneePool = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput(ASSIGNEE_POOL_KEY, { required: true })
     .split('\n')
