@@ -1,0 +1,19 @@
+name: 'Auto Assign'
+description: 'Automatically PR assign assignees from a list.'
+author: 'gerardabello'
+inputs:
+  github-token:
+    description: 'github token with access to the repo'
+    required: true
+  number-of-assignees:
+    description: 'number of assignees to pick from the pool'
+    required: true
+  assignee-pool:
+    description: 'newline-delimited list of users who can be picked as assignees'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'user-check'
+  color: 'green'
