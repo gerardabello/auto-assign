@@ -7,7 +7,7 @@ const ASSIGNEE_POOL_KEY = 'assignee-pool'
 
 function pickRandomFromArray(arr) {
   if (arr.length === 0) {
-    throw new Error('Internal error: cannot pick random from empty list')
+    throw new Error('Internal error: cannot pick random from empty list.')
   }
 
   return arr[Math.floor(Math.random() * arr.length)]
@@ -103,7 +103,7 @@ async function addAsignees(assignees) {
 async function main() {
   if (!isPullRequest()) {
     throw new Error(
-      'No pull request found. The auto-assign action only works for pull requests'
+      'No pull request found. The auto-assign action only works for pull requests.'
     )
   }
 
