@@ -1,4 +1,4 @@
-name: 'Auto Assign'
+name: 'Auto random assignees'
 description: 'Automatically PR assign assignees from a list.'
 author: 'gerardabello'
 inputs:
